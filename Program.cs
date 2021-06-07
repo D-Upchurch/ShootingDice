@@ -29,12 +29,15 @@ namespace ShootingDice
             smack.Name = "Huge Troll";
             smack.Taunt = "You're Gonna Lose! I'm The Best";
 
-            player1.Play(smack);
+            OneHigherPlayer OneUp = new OneHigherPlayer();
+            OneUp.Name = "Ron Burgundy";
+
+            player1.Play(OneUp);
 
             Console.WriteLine("-------------------");
 
             List<Player> players = new List<Player>() {
-                player1, player2, player3, smack
+                player1, player2, player3, OneUp
             };
 
             PlayMany(players);
