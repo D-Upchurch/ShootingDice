@@ -32,12 +32,15 @@ namespace ShootingDice
             OneHigherPlayer OneUp = new OneHigherPlayer();
             OneUp.Name = "Ron Burgundy";
 
-            player1.Play(OneUp);
+            HumanPlayer human = new HumanPlayer();
+            human.Name = "John Smith";
+
+            player1.Play(human);
 
             Console.WriteLine("-------------------");
 
             List<Player> players = new List<Player>() {
-                player1, player2, player3, OneUp
+                player1, player2, player3, human
             };
 
             PlayMany(players);
