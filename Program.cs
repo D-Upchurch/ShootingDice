@@ -37,12 +37,15 @@ namespace ShootingDice
 
             CreativeSmackTalkingPlayer cstp = new CreativeSmackTalkingPlayer("Lebron James");
 
-            player1.Play(cstp);
+            SoreLoserPlayer SLP = new SoreLoserPlayer();
+            SLP.Name = "Rod Brind'amour";
+
+            player1.Play(SLP);
 
             Console.WriteLine("-------------------");
 
             List<Player> players = new List<Player>() {
-                player1, player2, player3, cstp
+                player1, player2, player3, SLP
             };
 
             PlayMany(players);
