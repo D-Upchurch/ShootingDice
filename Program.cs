@@ -43,12 +43,16 @@ namespace ShootingDice
             UpperHalfPlayer UHP = new UpperHalfPlayer();
             UHP.Name = "Greatness Winsalot";
 
-            player1.Play(UHP);
+            SoreLoserUpperHalfPlayer SLUHP = new SoreLoserUpperHalfPlayer();
+            SLUHP.Name = "Ultimate Crybaby";
+
+
+            SLUHP.Play(player1);
 
             Console.WriteLine("-------------------");
 
             List<Player> players = new List<Player>() {
-                player1, player2, player3, UHP
+                player1, player2, player3, SLUHP
             };
 
             PlayMany(players);
