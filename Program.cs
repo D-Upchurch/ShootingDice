@@ -35,12 +35,14 @@ namespace ShootingDice
             HumanPlayer human = new HumanPlayer();
             human.Name = "John Smith";
 
-            player1.Play(human);
+            CreativeSmackTalkingPlayer cstp = new CreativeSmackTalkingPlayer("Lebron James");
+
+            player1.Play(cstp);
 
             Console.WriteLine("-------------------");
 
             List<Player> players = new List<Player>() {
-                player1, player2, player3, human
+                player1, player2, player3, cstp
             };
 
             PlayMany(players);
