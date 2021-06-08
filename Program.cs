@@ -40,12 +40,15 @@ namespace ShootingDice
             SoreLoserPlayer SLP = new SoreLoserPlayer();
             SLP.Name = "Rod Brind'amour";
 
-            player1.Play(SLP);
+            UpperHalfPlayer UHP = new UpperHalfPlayer();
+            UHP.Name = "Greatness Winsalot";
+
+            player1.Play(UHP);
 
             Console.WriteLine("-------------------");
 
             List<Player> players = new List<Player>() {
-                player1, player2, player3, SLP
+                player1, player2, player3, UHP
             };
 
             PlayMany(players);
